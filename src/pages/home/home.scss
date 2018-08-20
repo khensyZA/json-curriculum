@@ -1,3 +1,40 @@
-page-home {
 
+
+
+h1 {
+
+    font-family: Impact,'Arial Narrow Bold';
+    text-align: center;
+    }
+
+h3 {
+
+    font-family: Impact,'Arial Narrow Bold';
+    
+    }
+
+.course{
+  
+    background-color: bisque;
+   
+}
+
+
+p{
+color: black;
+
+    }
+   
+     [ion-item]{
+
+   background-color: rgba(226, 166, 76, 0.541);  
+   margin-bottom: 15px;
+   margin-top: 2px;
+   padding: 10px;
+       
+     
+     }
+
+.code{
+    background-color:rgba(226, 166, 76, 0.541);  
 }

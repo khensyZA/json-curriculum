@@ -1,14 +1,43 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar color="yellow">
+    <ion-title text-center >
+      Skills Development Programme
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="course" >
+
+ <ion-list  no-lines  >
+
+   <ion-list-header class="code" >
+     <ion-item text-center bold  class="code" >
+     <h1> Codetribe Curriculum </h1> 
+    </ion-item>
+   </ion-list-header>
+
+
+      <button ion-item *ngFor= "let course of arrCourses" detail-none (click)="details(course)" >
+
+          <ion-icon name="{{course.icon}}" item-left></ion-icon>
+         
+              <h2>{{course.title}} </h2>
+          
+          
+        
+   <div *ngFor="let lesson of course.lessons ; let i=index" >
+
+        <h3>Lesson: {{lesson.number}}</h3>
+        <p>{{lesson.title}}</p>
+        <p>{{lesson.description}}</p>
+         
+         </div> 
+<br>
+         <h4 text-center>Duration:{{course.weeks}}weeks</h4>
+
+        
+
+        </button>
+
+      </ion-list>
 </ion-content>

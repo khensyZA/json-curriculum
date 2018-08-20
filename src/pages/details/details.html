@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color="yellow">
+      <ion-title>
+        Course {{course.number}}
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+
+
+
+ <ion-content padding class="con">
+
+
+
+ <ion-card class="card" *ngFor="let lesson of course.lessons">
+ 
+ 
+   <ion-card-header>
+     
+       <h2>{{lesson.title}}</h2>
+
+   </ion-card-header>
+
+
+   <ion-card-content>
+      <P style="text-align:right"><img src="{{lesson.image}}"></P>
+   
+
+   <ion-card-header>
+      <h2> Lesson: {{lesson.number}}</h2>
+    </ion-card-header>
+
+  
+        <p>{{lesson.description}}</p>
+      </ion-card-content>
+ 
+ </ion-card>
+ </ion-content>
